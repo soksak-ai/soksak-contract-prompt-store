@@ -1,4 +1,4 @@
-# soksak-prompt-store-spec
+# soksak-spec-plugin-prompt-store
 
 A **prompt store**: a place to keep the text a model is given, addressed by what the text *is*
 rather than by where it was put, and a way to assemble a finished prompt out of one such text plus
@@ -20,13 +20,13 @@ written to become a text store, which is a standard widened until it means nothi
 An implementer declares the contract in its manifest:
 
 ```json
-{ "implements": ["soksak-prompt-store-spec"] }
+{ "implements": ["soksak-spec-plugin-prompt-store"] }
 ```
 
 A consumer discovers implementers by contract id alone:
 
 ```
-sok plugin.implementers '{"contract":"soksak-prompt-store-spec"}'
+sok plugin.implementers '{"contract":"soksak-spec-plugin-prompt-store"}'
 ```
 
 and addresses whichever it finds as `plugin.<discovered id>.<command>`. A consumer that hard-codes an
