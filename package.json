@@ -1,0 +1,11 @@
+{
+  "name": "soksak-contract-prompt-store",
+  "private": true,
+  "version": "0.0.1",
+  "soksakRelease": {
+    "kind": "contract",
+    "id": "soksak-contract-prompt-store",
+    "repository": "https://github.com/soksak-ai/soksak-contract-prompt-store",
+    "manifest": "release.json"
+  }
+}
